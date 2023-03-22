@@ -1,65 +1,56 @@
-<h2>🎯 Objetivo do Projeto</h2>
-<p>Ao final deste projeto, o Dev irá conhecer os principais conceitos de mapeamento objeto relacional (ORM) usando o <strong>Spring Data JPA</strong>. Para isso, uma <strong>API RESTful</strong> será desenvolvida com ênfase na modelagem de suas entidades, no domínio de uma academia de ginástica.</p>
+# Conhecendo Spring Data JPA na Prática
 
-<h2> Guia </h2>
-
-<ol>
-    <li> Apresentação do Projeto Base </li>
-    <li> Configuração do banco de dados (SGBD <em>PostgreSQL</em>)</li>
-    <li> Aplicando as <em>annotations</em></li>
-    <li>Execução do fluxo back-end: <em>Controller - Service - Repository</em></li>
-    <li>Validação - <em>Hibernate Validator</em> </li>
-    <li>Consultas Avançadas - <em>Derived Query - Native Query</em></li>
-</ol>
-
-<h2>🛠 Tecnologias Utilizadas</h2>
-
-<ul>
-    <li>Java 11</li>
-    <li>Maven</li>
-    <li>Spring Web</li>
-    <li>Spring Data JPA</li>
-    <li>PostgreSQL Driver</li>
-    <li>Hibernate Validator</li>
-    <li>Lombok</li>
-    <li>Postman</li>
-</ul>
+Objetivo do Projeto
+------------------------------
+Conhecer os principais conceitos de mapeamento objeto relacional (ORM) usando o Spring Data JPA. Para isso, uma API RESTful será desenvolvida com ênfase na modelagem de suas entidades, no domínio de uma academia de ginástica.
 
 
-<h2><a href="https://strn.com.br/artigos/2018/12/11/todas-as-anota%C3%A7%C3%B5es-do-jpa-anota%C3%A7%C3%B5es-de-mapeamento/"> Anotações de Mapeamento </a></h2>
+Atividades Desenvolvidas
+------------------------------
+-> Configuração do banco de dados (SGBD PostgreSQL)
+-> Aplicando as annotations
+-> Execução do fluxo back-end: Controller - Service - Repository
+-> Validação - Hibernate Validator
+-> Consultas Avançadas - Derived Query - Native Query
 
-<strong>@Entity</strong>
-Usada para especificar que a classe anotada atualmente representa um tipo de entidade.
 
-<strong>@Table</strong>
-Usada para especificar a tabela principal da entidade atualmente anotada.
+Tecnologias Utilizadas
+------------------------------
+-> Java 11
+-> Maven
+-> Spring Web
+-> Spring Data JPA
+-> PostgreSQL Driver
+-> Hibernate Validator
+-> Lombok
+-> Postman
 
-<strong>@Id</strong>
-Especifica o identificador da entidade. Uma entidade deve sempre ter um atributo identificado.
 
-<strong>@GeneratedValue</strong>
-Especifica que o valor do identificador de entidade é gerado automaticamente.
+Anotações de Mapeamento
+------------------------------
+@Entity Usada para especificar que a classe anotada atualmente representa um tipo de entidade.
 
-<strong>@Column</strong>
-Usada para especificar o mapeamento entre um atributo de entidade básico e a coluna da tabela de banco de dados.
+@Table Usada para especificar a tabela principal da entidade atualmente anotada.
 
-<strong>@JoinColumn</strong>
-Usada para especificar a coluna FOREIGN KEY. Indica que a entidade é a responsável pelo relacionamento.
+@Id Especifica o identificador da entidade. Uma entidade deve sempre ter um atributo identificado.
 
-<strong>@OneToMany</strong>
-Usada para especificar um relacionamento de banco de dados um-para-muitos.
+@GeneratedValue Especifica que o valor do identificador de entidade é gerado automaticamente.
 
-<strong>@OneToOne</strong>
-Usada para especificar um relacionamento de banco de dados um-para-um.
+@Column Usada para especificar o mapeamento entre um atributo de entidade básico e a coluna da tabela de banco de dados.
 
-<strong>@ManyToOne</strong>
-Usada para especificar um relacionamento de banco de dados muitos-para-um.
+@JoinColumn Usada para especificar a coluna FOREIGN KEY. Indica que a entidade é a responsável pelo relacionamento.
 
-<strong>cascade</strong>
-Realizar operações em cascata só faz sentido em relacionamentos Pai - Filho.
+@OneToMany Usada para especificar um relacionamento de banco de dados um-para-muitos.
 
-<strong>mappedBy</strong>
-Indica qual é o lado inverso ou não dominante da relação.
+@OneToOne Usada para especificar um relacionamento de banco de dados um-para-um.
+
+@ManyToOne Usada para especificar um relacionamento de banco de dados muitos-para-um.
+
+cascade Realizar operações em cascata só faz sentido em relacionamentos Pai - Filho.
+
+mappedBy Indica qual é o lado inverso ou não dominante da relação.
+
+Página com todas anotações de mapeamento: https://strn.com.br/artigos/2018/12/11/todas-as-anota%C3%A7%C3%B5es-do-jpa-anota%C3%A7%C3%B5es-de-mapeamento/
 
 
 
