@@ -25,12 +25,13 @@ public class MatriculaServiceImpl implements IMatriculaService {
     public Matricula create(MatriculaForm form) {
         Matricula matricula = new Matricula();
         Aluno aluno = alunoRepository.findById(form.getAlunoId()).get();
+        matricula.setAluno(aluno);
         return matriculaRepository.save(matricula);
     }
 
     @Override
     public Matricula get(Long id) {
-        return null;
+    return null;
     }
 
     @Override
